@@ -1,13 +1,17 @@
-const add = function() {
-	
+const add = function(...numbers) {
+  var sum = 0;
+	numbers.forEach(number => {
+    sum+=number;
+  });
+  return sum;
 };
 
 const subtract = function() {
 	
 };
 
-const sum = function() {
-	
+const sum = function(numbers) {
+  return numbers.reduce((a,b)=>a+b,0);
 };
 
 const multiply = function() {
