@@ -14,12 +14,20 @@ const sum = function(numbers) {
   return numbers.reduce((a,b)=>a+b,0);
 };
 
-const multiply = function() {
-
+const multiply = function(numbers) {
+  var sum = 1;
+	numbers.forEach(number => {
+    sum*=number;
+  });
+  return sum;
 };
 
-const power = function() {
-	
+const power = function(numberA, numberb) {
+  var sum = 1;
+	for (let index = 0; index < numberb; index++) {
+    sum*=numberA;
+  }
+  return sum;
 };
 
 const factorial = function() {
